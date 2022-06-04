@@ -154,5 +154,5 @@ function stopMining() {
 	}
 	threads = []
 	minerActive = false;
-	setMinerStatus("Stopped");
+	setMinerStatus("Not running..");
 }
