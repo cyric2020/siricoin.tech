@@ -135,7 +135,7 @@ async function startMining(_address, _threads) {
 				}
 			}
 			else {
-				setMinerStatus("Error: WebWorker isn't supported on this browser");
+				setMinerStatus("Error: Webminer cannot run on this browser. (error.javascript.exec.failed)");
 			}
 		}
 	}
