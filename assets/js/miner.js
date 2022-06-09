@@ -74,13 +74,13 @@ wallet = new Wallet(_web3);
 lastBalanceRefresh = 0;
 
 var formatHashrate = function(rate) {
-	rate= parseFloat(rate); unit= 'H/s';
-	if(rate >= 1000) { rate /= 1000; unit= 'KH/s'; }
-	if(rate >= 1000) { rate /= 1000; unit= 'MH/s'; }
-	if(rate >= 1000) { rate /= 1000; unit= 'GH/s'; }
-	if(rate >= 1000) { rate /= 1000; unit= 'TH/s'; }
-	if(rate >= 1000) { rate /= 1000; unit= 'PH/s'; }
-	return (rate.toFixed(2) + ' ' + unit);
+    rate= parseFloat(rate); unit= 'H/s';
+    if(rate >= 1000) { rate /= 1000; unit= 'KH/s'; }
+    if(rate >= 1000) { rate /= 1000; unit= 'MH/s'; }
+    if(rate >= 1000) { rate /= 1000; unit= 'GH/s'; }
+    if(rate >= 1000) { rate /= 1000; unit= 'TH/s'; }
+    if(rate >= 1000) { rate /= 1000; unit= 'PH/s'; }
+    return (rate.toFixed(2) + ' ' + unit);
   }
 
 function threadsStatus(threadNumber, data) {
@@ -88,14 +88,16 @@ function threadsStatus(threadNumber, data) {
 	threads[threadNumber].hashrate = Number(data.split(",")[1]);
 	i = 0;
 	hashrate = 0;
-	hashmath = Math.round(hashrate*100)/100;
 	shares = 0;
 	while (i < threads.length) {
 		hashrate += threads[i].hashrate;
 		shares += threads[i].shares;
 		i += 1;
 	}
-	setMinerStatus(`running - ${shares} shares accepted - ${formatHashrate(hashmath)} h/s <br/>Number of threads : ${threads.length}`);
+
+	var formattedHashrate = formatHashrate(hashrate);
+
+	setMinerStatus(`running - ${shares} shares accepted - ${formatHashrate(hashrate)} <br/>Number of threads : ${threads.length}`);
 	if (Number(data.split(",")[2]) == 1) {
 		refreshBalance();
 	}
