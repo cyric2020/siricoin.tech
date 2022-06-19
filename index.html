@@ -944,6 +944,13 @@
     }
 
     window.document.addEventListener("scroll", onScroll);
+  
+  // ✅ Change button text on click
+  const start = document.getElementById('Start');
+  start.addEventListener('click', function handleClick() {
+    start.textContent = 'Restart Mining';
+  });
+
   </script>
 </body>
 
