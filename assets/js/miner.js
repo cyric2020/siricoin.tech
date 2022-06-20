@@ -122,7 +122,7 @@ async function formatAddress(_address_) {
 async function startMining(_address, _threads) {
 	try {
 		currentAddress = (await formatAddress(_address));
-		refreshBalance();
+		refreshBalance();	
 		if (!minerActive) {
 			if (typeof Worker !== "undefined") {
 				minerActive = true;
