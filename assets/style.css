@@ -1,3 +1,9 @@
+a:link{
+    text-decoration: none!important;
+    cursor: pointer;
+  }
+
+
 body {
     font-family: var(--font);
     font-weight: normal;
@@ -19,6 +25,13 @@ body{
     height: 400px;
     background: transparent;
     left: 30px;
+}
+
+.logo {
+    max-width: 20%;
+    height: auto;
+    border-radius: 50%;
+    padding-right: 5px;
 }
 
 @keyframes animate{
@@ -43,7 +56,7 @@ body{
     width: calc(100% + 5px);
     height: calc(100% + 5px);
     z-index: -1;
-    animation: animate 20s linear infinite;
+    animation: animate 25s linear infinite;
 }
 
 
@@ -51,30 +64,23 @@ body{
     filter: blur(40px);
 }
 
-.btn{
-    font-family: "Roboto", sans-serif;
-    align-items: right;
-    font-size: 15px;
-    font-weight: bold;
-    background: white;
-    width: 290px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #1E90FF;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
+
+.navbtn{
+    padding-left: 7px;
+    padding-right: 7px;
+    color: white;
+    background: none;
+    border: none;
+    border-radius: 4px;
 }
 
-.btn:hover, .btn:focus, .btn:active{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+.metamask {
+    color: black;
+    font-size: 15px;
+    padding: 5px 7px;
+    background-color: white;
 }
+
 
 .box{
     position: relative;
@@ -272,7 +278,6 @@ section.Teams{
     width: 290px;
     padding: 10px;
     text-align: center;
-    text-decoration: none;
     text-transform: uppercase;
     color: #1E90FF;
     border-radius: 5px;
@@ -281,6 +286,11 @@ section.Teams{
     -webkit-transition-duration: 0.3s;
     -webkit-transition-property: box-shadow, transform;
     margin-top: 50px;
+}
+
+.btnone:link{
+    text-decoration: none!important;
+    cursor: pointer;
 }
 
 .btnone:hover, .btnone:focus, .btnone:active{
