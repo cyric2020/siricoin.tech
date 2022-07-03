@@ -1,4 +1,14 @@
-# siricoin.tech
-Source of the official SiriCoin website. Live under https://siricoin.tech  
-  
-This code is released under MIT License. Read LICENSE file for more information.
+# Hook Landing Page Theme
+
+This landing page theme is built on [shorthand css framework](https://github.com/shorthandcss/shorthand)
+
+![preview](/preview.jpg)
+
+## Credit
+
+* Picture [unsplash](https://unsplash.com)
+* Icons [feathericons](https://feathericons.com)
+
+## LICENSE
+
+The theme is available under the MIT License.
