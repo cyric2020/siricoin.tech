@@ -165,13 +165,3 @@ function stopMining() {
 	minerActive = false;
 	setMinerStatus("Not running..");
 }
-
-  const start = document.getElementById('Start');
-  start.addEventListener('click', function handleClick() {
-    start.textContent = 'Restart Mining';
-  });
-
-  const stop = document.getElementById('Stop');
-  stop.addEventListener('click', function handleClick() {
-    start.textContent = 'Start Mining';
-  });
