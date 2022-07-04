@@ -100,8 +100,30 @@
     <!-- Webminer -->
     <h2>SiriCoin Webminer</h2>
     <h2>A SiriCoin miner which mines siricoin<br>with the help of your browser</h2>
-    <div id="webminer" class="block glow">
-        <!--PUT WEBMINER CODE HERE-->
+    <div class="block glow">
+        <section id="webminer" class="items-center justify-center">
+            <div class="items-center justify-center p-10">
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                  <div class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
+                    <div class="content text-centered p-6 mb-6">
+                      <input class="input text-centered is-rounded p-4" style="margin-bottom: 20px;" id="addressInput"
+                        placeholder="Paste Your Siricoin Address"></input> <br>
+                      <input type="number" class="input has-text-centered is-rounded p-4" id="threadsInput"
+                        placeholder="Number of mining Threads"></input>
+                      <p style="color: white;">Recommended threads: <script>document.write(`${navigator.hardwareConcurrency}`)</script></p>
+                      <button class="btn minerbtn m-2 mb-4" id="Start"
+                        onclick="startMining(document.getElementById('addressInput').value, Number(document.getElementById('threadsInput').value))"><strong>Start
+                          Mining</strong></button>
+                      <button class="btn minerbtn m-2 mb-4" id="Stop" onclick="stopMining()"><strong>Stop
+                          Mining</strong></button><br />
+                      <span style="color: white">Mining Status: </span> <span id="miningstatus" style="color: white">Stopped</span><br />
+                      <span style="color: white">Current balance: </span> <span id="currentbalance" style="color: white">Please enter Siricoin address to view live Balance.</span>
+                    </div>
+                  </div>
+                  <script src="assets/js/miner.js"></script>
+                </div>
+            </div>
+          </section>
     </div>
 
     <!-- About -->
