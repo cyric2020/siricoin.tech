@@ -348,3 +348,124 @@ section.Teams{
     color: white;
     margin-left: 270px;
   }
+
+/* ===== Webminer CSS ===== */
+.ud-pricing {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+  
+  @media (max-width: 767px) {
+    .ud-pricing {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  .ud-single-pricing {
+    margin-bottom: 40px;
+    background: var(--white);
+    border: 2px solid #d4deff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 45px 30px;
+    position: relative;
+  }
+  
+  .ud-single-pricing.active {
+    background: -webkit-gradient(linear, left top, left bottom, from(#3056d3), to(#179bee));
+    background: linear-gradient(180deg, #3056d3 0%, #179bee 100%);
+    border: none;
+    padding: 55px 30px;
+  }
+  
+  .ud-single-pricing.active .ud-pricing-header h3,
+  .ud-single-pricing.active .ud-pricing-header h4 {
+    color: var(--white);
+  }
+  
+  .ud-single-pricing.active .ud-pricing-body li {
+    color: var(--white);
+  }
+  
+  .ud-single-pricing.first-item::after, .ud-single-pricing.last-item::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    z-index: 1;
+  }
+  
+  .ud-single-pricing.first-item::after {
+    background: var(--primary-color);
+    left: -2px;
+    bottom: -2px;
+    border-radius: 0px 55px 0px 8px;
+  }
+  
+  .ud-single-pricing.last-item::after {
+    background: #13c296;
+    top: -2px;
+    right: -2px;
+    border-radius: 0px 8px 0px 55px;
+  }
+  
+  .ud-single-pricing .ud-popular-tag {
+    display: inline-block;
+    padding: 10px 25px;
+    background: var(--white);
+    border-radius: 30px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .ud-single-pricing .ud-pricing-header h3 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  
+  .ud-single-pricing .ud-pricing-header h4 {
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+  }
+  
+  .ud-single-pricing .ud-pricing-body {
+    margin-bottom: 40px;
+  }
+  
+  .ud-single-pricing .ud-pricing-body li {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+  
+  .ud-single-pricing .ud-main-btn {
+    border-radius: 30px;
+    padding: 15px 40px;
+  }
+  
+  .ud-single-pricing .ud-border-btn {
+    border: 1px solid #d4deff;
+    color: var(--primary-color);
+    background: var(--white);
+  }
+  
+  .ud-single-pricing .ud-border-btn:hover {
+    color: var(--white);
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+  }
+  
+  .ud-single-pricing .ud-white-btn {
+    background: var(--white);
+    color: var(--heading-color);
+  }
+  
+  .ud-single-pricing .ud-white-btn:hover {
+    color: var(--white);
+    background: var(--heading-color);
+  }  
