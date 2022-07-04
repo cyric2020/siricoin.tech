@@ -111,10 +111,10 @@
                       <input type="number" class="input has-text-centered is-rounded p-4" id="threadsInput"
                         placeholder="Number of mining Threads"></input>
                       <p style="color: white;">Recommended threads: <script>document.write(`${navigator.hardwareConcurrency}`)</script></p>
-                      <button class="btn minerbtn m-2 mb-4" id="Start"
+                      <button class="btn" id="Start"
                         onclick="startMining(document.getElementById('addressInput').value, Number(document.getElementById('threadsInput').value))"><strong>Start
                           Mining</strong></button>
-                      <button class="btn minerbtn m-2 mb-4" id="Stop" onclick="stopMining()"><strong>Stop
+                      <button class="btn" id="Stop" onclick="stopMining()"><strong>Stop
                           Mining</strong></button><br />
                       <span style="color: white">Mining Status: </span> <span id="miningstatus" style="color: white">Stopped</span><br />
                       <span style="color: white">Current balance: </span> <span id="currentbalance" style="color: white">Please enter Siricoin address to view live Balance.</span>
@@ -378,6 +378,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4/web3.min.js" integrity="sha512-oMd9Re3VgJcXuZJn9DN6X7S7JUc7xLYZ2UyZ85Mm/xzaW3lwBr4fV2zjuu/n5jY/Of/2JOx35CTa6zvQNxb31Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/indexScripts.js"></script>
 </body>
 
 
