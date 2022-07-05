@@ -768,7 +768,3 @@ object-fit: cover;
     filter: hue-rotate(360deg);
   }
 }
-
-input{
-  width: 600px;
-}
