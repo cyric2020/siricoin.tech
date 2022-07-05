@@ -108,19 +108,19 @@
                 <div class="col-lg-4 col-md-6 col-sm-10">
                   <div class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
                     <div class="content text-centered p-6 mb-6">
-                      <input class="input text-centered is-rounded p-4" style="margin-bottom: 20px;" id="addressInput"
-                        placeholder="Paste Your Siricoin Address"></input> <br>
-                      <input type="number" class="input has-text-centered is-rounded p-4" id="threadsInput"
-                        placeholder="Number of mining Threads"></input>
-                      <p style="color: white;">Recommended threads: <script>document.write(`${navigator.hardwareConcurrency}`)</script></p>
-                      <button class="btn" id="Start"
-                        onclick="startMining(document.getElementById('addressInput').value, Number(document.getElementById('threadsInput').value))"><strong>Start
-                          Mining</strong></button>
-                      <button class="btn" id="Stop" onclick="stopMining()"><strong>Stop
-                          Mining</strong></button><br />
-                      <span style="color: white">Mining Status: </span> <span id="miningstatus" style="color: white">Stopped</span><br />
-                      <span style="color: white">Current balance: </span> <span id="currentbalance" style="color: white">Please enter Siricoin address to view live Balance.</span>
-                    </div>
+                        <input class="input text-centered is-rounded p-4" style="margin-bottom: 20px;" id="addressInput"
+                          placeholder="Paste Your Siricoin Address"></input> <br>
+                        <input type="number" class="input has-text-centered is-rounded p-4" id="threadsInput"
+                          placeholder="Number of mining Threads"></input>
+                        <p style="color: black;"><b>Recommended threads:</b> <script>document.write(`${navigator.hardwareConcurrency}`)</script></p>
+                        <button class="btn" id="Start"
+                          onclick="startMining(document.getElementById('addressInput').value, Number(document.getElementById('threadsInput').value))"><strong>Start
+                            Mining</strong></button>
+                        <button class="btn" id="Stop" onclick="stopMining()"><strong>Stop
+                            Mining</strong></button><br />
+                        <span style="color: black, "><b>Mining Status:</b> </span> <span id="miningstatus" style="color: black">Stopped</span><br />
+                        <span style="color: black"><b>Current balance:</b> </span> <span id="currentbalance" style="color: black">Please enter Siricoin address to view live Balance.</span>
+                      </div>
                   </div>
                 </div>
             </div>
