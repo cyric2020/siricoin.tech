@@ -94,8 +94,8 @@ html{
 .box{
     position: relative;
     margin: 10% auto 0;
-    width: 85%;
-    height: 490px;
+    width: 75%;
+    height: 770px;
     background: linear-gradient(0deg, #121112, rgb(44, 43, 43));
 }
 
@@ -134,25 +134,18 @@ h2{
     font-family: "Roboto", sans-serif;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 p.para2{
   font-family: monospace;
     font-size: 18px;
     color: white;
-    text-align: left;
+    text-align: center;
+    justify-content: center;
     padding: 30px;
     margin-left: 20px;
-}
-
-p.para3{
-  font-family: monospace;
-  font-size: 18px;
-  color: white;
-  text-align: right;
-  padding: 30px;
-  margin-right: 20px;
+    margin-bottom: 100px;
 }
 
 section.Teams{
