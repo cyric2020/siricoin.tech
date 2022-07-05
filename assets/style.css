@@ -300,6 +300,12 @@ section.Teams{
     transform: scale(1.1);
 }
 
+@media (max-width: 767px) {
+  .btnone{
+    width: 100%;
+  }
+}
+
 .ud-widget-links a {
     display: inline-block;
     margin-bottom: 12px;
