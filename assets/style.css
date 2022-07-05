@@ -647,14 +647,17 @@ section.Teams{
   padding: 10px;
   text-decoration: none;
   font-weight: 700;
-  margin-left: 40px;
+  min-width: max-content;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .teamcontainer .teambox .teamcontent .imgBx img{
   position: absolute;
   align-items: center;
   position: relative;
-  margin-left: 60px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   top: -10px;
   left: 0;
   width: 80px;
