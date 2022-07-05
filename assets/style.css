@@ -94,8 +94,7 @@ html{
 .box{
     position: relative;
     margin: 10% auto 0;
-    width: 75%;
-    height: 790px;
+    width: 80%;
     background: linear-gradient(0deg, #121112, rgb(44, 43, 43));
 }
 
@@ -143,9 +142,10 @@ p.para2{
     color: white;
     text-align: center;
     justify-content: center;
-    padding: 30px;
+    padding: 15px;
+    margin-top: 30px;
     margin-left: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 100px;;
 }
 
 section.Teams{
@@ -202,8 +202,8 @@ section.Teams{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 1px;
+    height: 1px;
     object-fit: cover;
 }
 
@@ -504,4 +504,161 @@ section.Teams{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.heroimg{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.teamcontainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.teamcontainer .teambox{
+  position: relative;
+  width: 320px;
+  height: 400px;
+  color: #fff;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px;
+  transition: 0.5%;
+}
+
+.teamcontainer .teambox:hover{
+  transform: translateY(-20px);
+}
+
+.teamcontainer .teambox::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ffbc00, #ff0058);
+
+}
+
+.teamcontainer .teambox::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ffbc00, #ff0058);
+  filter: blur(30px);
+
+}
+
+.teamcontainer .teambox:nth-child(2)::before,
+.teamcontainer .teambox:nth-child(2)::after{
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.teamcontainer .teambox:nth-child(3)::before,
+.teamcontainer .teambox:nth-child(3)::after{
+  background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.teamcontainer .teambox:nth-child(5)::before,
+.teamcontainer .teambox:nth-child(5)::after{
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.teamcontainer .teambox:nth-child(6)::before,
+.teamcontainer .teambox:nth-child(6)::after{
+  background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.teamcontainer .teambox:nth-child(8)::before,
+.teamcontainer .teambox:nth-child(8)::after{
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.teamcontainer .teambox:nth-child(9)::before,
+.teamcontainer .teambox:nth-child(9)::after{
+  background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.teamcontainer .teambox:nth-child(11)::before,
+.teamcontainer .teambox:nth-child(11)::after{
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.teamcontainer .teambox:nth-child(12)::before,
+.teamcontainer .teambox:nth-child(12)::after{
+  background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.teamcontainer .teambox span{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  bottom: 6px;
+  right: 6px;
+  background: rgba(0,0,0,0.6);
+  z-index: 2;
+}
+
+.teamcontainer .teambox span::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.teamcontainer .teambox .teamcontent{
+  position: relative;
+  z-index: 10;
+  padding: 20px 40px;
+}
+
+.teamcontainer .teambox .teamcontent h2{
+  font-size: 1.1em;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.teamcontainer .teambox .teamcontent p{
+  text-align: center;
+}
+
+.teamcontainer .teambox .teamcontent a{
+  display: inline-block;
+  font-size: 1.1em;
+  color: #1E90FF;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.teamcontainer .teambox .teamcontent .imgBx img{
+  position: absolute;
+  align-items: center;
+  position: relative;
+  margin-left: 60px;
+  top: -10px;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
 }
