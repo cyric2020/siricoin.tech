@@ -698,12 +698,27 @@ object-fit: cover;
 
 .contactcontent{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* 1fr 1fr */
+  grid-gap: 10%;
   align-items: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px){
+  .contactcontent{
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-left: 0px;
+    transform: translateX(0px);
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .contactdetails{
-  max-width: 80%;
+  /* max-width: 80%; */
 }
 
 .title{
