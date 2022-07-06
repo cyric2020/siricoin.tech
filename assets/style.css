@@ -73,10 +73,27 @@ height: -webkit-fill-available;
   filter: blur(40px);
 }
 
+.nav-items{
+  gap: 14px;
+}
+
+@media (max-width: 768px) {
+  .nav-items{
+    gap: 4px;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.6);
+    width: max-content;
+    padding: 20px;
+    border-radius: 16px;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    overflow: hidden;
+  }
+}
 
 .navbtn{
-  padding-left: 7px;
-  padding-right: 7px;
   color: white;
   background: none;
   border: none;
@@ -538,7 +555,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin: 20px 30px;
-transition: 0.5%;
+transition: 0.2s all ease-in-out;
 }
 
 .teamcontainer .teambox:hover{
