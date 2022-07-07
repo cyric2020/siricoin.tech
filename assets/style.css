@@ -742,7 +742,6 @@ object-fit: cover;
   gap: 43px;
   color: white;
   text-align: center;
-  margin-right: 70px;
 }
 
 @media screen and (max-width: 768px){
