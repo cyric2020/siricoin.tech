@@ -3,6 +3,14 @@ a:link{
   cursor: pointer;
 }
 
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, #e6fb04, #ff6600);
+  border-radius: 6px;
+}
 
 body {
   font-family: var(--font);
