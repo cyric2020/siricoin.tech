@@ -8,7 +8,12 @@ a:link{
 }
 
 ::-webkit-scrollbar-thumb{
-  background: linear-gradient(transparent, #e6fb04, #ff6600);
+  background: linear-gradient(transparent, #fd4add);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent, #51f6fd);
   border-radius: 6px;
 }
 
