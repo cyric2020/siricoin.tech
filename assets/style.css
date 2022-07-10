@@ -395,6 +395,47 @@ section.Teams{
 }
 
 /* ===== Webminer CSS ===== */
+#webminer{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.webminer{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .webminer{
+    width: 100%;
+  }
+  .webminer input{
+    width: 100%;
+  }
+  .webminer button{
+    width: 100%;
+  }
+  .ud-single-pricing{
+    padding: 10px !important;
+  }
+}
+
+.webminer input{
+  background: white;
+  outline: none;
+  color: #1E90FF;
+  font-weight: bold;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+}
+
+.webminer button{
+  width: 90%;
+}
+
 .ud-pricing {
   padding-top: 120px;
   padding-bottom: 90px;
@@ -409,13 +450,28 @@ section.Teams{
 
 .ud-single-pricing {
   margin-bottom: 40px;
-  background: linear-gradient(45deg , #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
-  filter:brightness(90%);
+  background: linear-gradient(0deg, #121112, rgb(44, 43, 43));
   border: 2px solid #fff;
   border-radius: 8px;
   text-align: center;
   padding: 45px 30px;
   position: relative;
+}
+.ud-single-pricing::before, .ud-single-pricing::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg , #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+  background-size: 400%;
+  border-radius: 8px;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+.ud-single-pricing::after {
+  filter: blur(40px);
 }
 
 .ud-single-pricing.active {
